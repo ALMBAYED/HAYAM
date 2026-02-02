@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+    <title>HAYAM - Who are you, between light and darkness?</title>
+    
+    <!-- PWA & Mobile Readiness -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="HAYAM">
+    <link rel="apple-touch-icon" href="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?q=80&w=180&auto=format&fit=crop">
+
+    <!-- SEO & Metadata -->
+    <meta name="description" content="An immersive psychological journey between light and darkness. Discover your soul's geometry through AI-powered analysis.">
+    <meta name="theme-color" content="#0a0a0a">
+    
+    <!-- Social Sharing (OpenGraph) -->
+    <meta property="og:title" content="HAYAM - Your Soul, Manifested">
+    <meta property="og:description" content="A cinematic self-discovery experience. Discover what lies beneath the mask.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hayam.io">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?q=80&w=2071&auto=format&fit=crop">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HAYAM - Immersive Self-Discovery">
+    <meta name="twitter:description" content="Who are you, between light and darkness? Find out now.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?q=80&w=2071&auto=format&fit=crop">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans+Arabic:wght@300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #f5f5f5;
+            overflow-x: hidden;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            /* Support for notch area on modern phones */
+            padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+        }
+        .font-playfair { font-family: 'Playfair Display', serif; }
+        .font-arabic { font-family: 'IBM Plex Sans Arabic', sans-serif; }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in { animation: fadeIn 2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
+        
+        /* Custom scrollbar for dark aesthetic */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #0a0a0a; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #444; }
+
+        .grainy-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: 50;
+            opacity: 0.05;
+            background-image: url("https://www.transparenttextures.com/patterns/p6.png");
+        }
+        
+        /* Hide tap highlight on mobile */
+        * { -webkit-tap-highlight-color: transparent; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@^2.45.4"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

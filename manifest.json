@@ -1,0 +1,22 @@
+
+{
+  "name": "HAYAM",
+  "short_name": "HAYAM",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "description": "Discover your soul's geometry between light and darkness.",
+  "icons": [
+    {
+      "src": "https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?q=80&w=192&auto=format&fit=crop",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?q=80&w=512&auto=format&fit=crop",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

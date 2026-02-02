@@ -1,0 +1,11 @@
+{
+  "name": "HAYAM",
+  "short_name": "HAYAM",
+  "description": "An immersive psychological self-discovery platform exploring the geometry of the human spirit.",
+  "requestFramePermissions": [],
+  "categories": [
+    "lifestyle",
+    "wellness",
+    "education"
+  ]
+}
